@@ -53,9 +53,9 @@ Wire Wire Line
 Wire Wire Line
 	3400 4050 3400 4100
 Wire Wire Line
-	5100 5450 4600 5450
+	5100 5250 4600 5250
 Wire Wire Line
-	5100 5650 4600 5650
+	5100 5450 4600 5450
 Wire Wire Line
 	8350 10800 8700 10800
 Wire Wire Line
@@ -210,13 +210,13 @@ Text Label 4300 5400 2    50   ~ 0
 USB_CON+
 Text Label 4300 5500 2    50   ~ 0
 USB_CON-
-Text Label 4600 5450 0    50   ~ 0
+Text Label 4600 5250 0    50   ~ 0
 USB-
-Text Label 4600 5650 0    50   ~ 0
+Text Label 4600 5450 0    50   ~ 0
 USB_CON-
 Text Label 3750 4200 2    50   ~ 0
 IR_OUT
-Text Label 6350 5650 2    50   ~ 0
+Text Label 6350 5450 2    50   ~ 0
 USB_CON+
 Text Label 8100 10050 0    50   ~ 0
 BOOT
@@ -259,12 +259,12 @@ $EndComp
 $Comp
 L power:+5V #PWR016
 U 1 1 61AE35A3
-P 5500 5150
-F 0 "#PWR016" H 5500 5000 50  0001 C CNN
-F 1 "+5V" V 5515 5278 50  0000 L CNN
-F 2 "" H 5500 5150 50  0001 C CNN
-F 3 "" H 5500 5150 50  0001 C CNN
-	1    5500 5150
+P 5500 4950
+F 0 "#PWR016" H 5500 4800 50  0001 C CNN
+F 1 "+5V" V 5515 5078 50  0000 L CNN
+F 2 "" H 5500 4950 50  0001 C CNN
+F 3 "" H 5500 4950 50  0001 C CNN
+	1    5500 4950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -336,12 +336,12 @@ $EndComp
 $Comp
 L power:GND #PWR017
 U 1 1 61AE2ED5
-P 5500 5950
-F 0 "#PWR017" H 5500 5700 50  0001 C CNN
-F 1 "GND" H 5505 5777 50  0001 C CNN
-F 2 "" H 5500 5950 50  0001 C CNN
-F 3 "" H 5500 5950 50  0001 C CNN
-	1    5500 5950
+P 5500 5750
+F 0 "#PWR017" H 5500 5500 50  0001 C CNN
+F 1 "GND" H 5505 5577 50  0001 C CNN
+F 2 "" H 5500 5750 50  0001 C CNN
+F 3 "" H 5500 5750 50  0001 C CNN
+	1    5500 5750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -701,13 +701,13 @@ $EndComp
 $Comp
 L Power_Protection:USBLC6-2SC6 U1
 U 1 1 61A7E604
-P 5500 5550
-F 0 "U1" H 5500 4850 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 5500 4950 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5500 5050 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 5700 5900 50  0001 C CNN
-F 4 "https://www.tme.eu/cz/details/usblc6-2sc6/ochranne-diody-site/stmicroelectronics/" H 5500 5550 50  0001 C CNN "Odkaz"
-	1    5500 5550
+P 5500 5350
+F 0 "U1" H 5500 4650 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 5500 4750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5500 4850 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 5700 5700 50  0001 C CNN
+F 4 "https://www.tme.eu/cz/details/usblc6-2sc6/ochranne-diody-site/stmicroelectronics/" H 5500 5350 50  0001 C CNN "Odkaz"
+	1    5500 5350
 	1    0    0    -1  
 $EndComp
 Connection ~ 12250 7100
@@ -781,7 +781,7 @@ Wire Wire Line
 Text Label 10850 7500 1    50   ~ 0
 SPI3_CS
 Wire Wire Line
-	5900 5650 6350 5650
+	5900 5450 6350 5450
 $Comp
 L Device:D_Bridge_+A-A D2
 U 1 1 62203D2A
@@ -1098,8 +1098,8 @@ Wire Notes Line
 Wire Notes Line
 	2200 6650 7400 6650
 Wire Wire Line
-	5900 5450 6350 5450
-Text Label 6350 5450 2    50   ~ 0
+	5900 5250 6350 5250
+Text Label 6350 5250 2    50   ~ 0
 USB+
 $Comp
 L Device:D D1
