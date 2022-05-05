@@ -1,0 +1,105 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP ADXL335BCPZ-RL
+D Accelerometer
+K
+F https://www.arrow.com/en/products/adxl335bcpz-rl/analog-devices
+$ENDCMP
+#
+$CMP MXC6655XA
+D Accelerometers Digital Three-Axis Accelerometer
+K
+F http://www.memsic.com/uploadfiles/2020/08/20200828111019223.pdf
+$ENDCMP
+#
+$CMP AVR128DA64T-E_PT
+D 128 KB, 64-PIN, 125C,TQFP, TAPE & REEL, 64 TQFP 10X10X1MM T/R ROHS COMPLIANT: YES
+K
+F 
+$ENDCMP
+#
+$CMP A3G4250DTR
+D 3-Axis Gyroscope 245dps SPI/I2C LGA16
+K
+F https://www.st.com/resource/en/datasheet/a3g4250d.pdf
+$ENDCMP
+#
+$CMP STM32L4P5CET6
+D MCU 32-bit ARM Cortex M4 RISC 512KB Flash 3.3V 48-Pin LQFP Tray
+K
+F https://www.st.com/resource/en/datasheet/stm32l4p5ce.pdf
+$ENDCMP
+#
+$CMP NCP1117ST33T3G
+D ON SEMICONDUCTOR - NCP1117ST33T3G - IC, LINEAR VOLTAGE REGULATOR
+K
+F http://www.onsemi.com/pub/Collateral/NCP1117-D.PDF
+$ENDCMP
+#
+$CMP ABS210-13
+D Bridge Rectifiers Bridge Rectifier
+K
+F https://www.diodes.com/assets/Datasheets/ABS210.pdf
+$ENDCMP
+#
+$CMP USB3065-30-00-A
+D GCT (GLOBAL CONNECTOR TECHNOLOGY) - USB3065-30-00-A - MICRO USB, 2.0 TYPE B, RECEPTACLE, SMT
+K
+F https://datasheet.octopart.com/USB3065-30-00-A-Global-Connector-Technology-datasheet-21095122.pdf
+$ENDCMP
+#
+$CMP ECS-160-8-36B2-CKM-TR
+D Crystals 16.000 MHz 8 pF +/-10 +/-10 -20 +70 C +/-2 ppm Max. ESR = 70
+K
+F https://www.mouser.fr/datasheet/2/122/ECX_2236B2-2400583.pdf
+$ENDCMP
+#
+$CMP RN4871-V_RM140
+D Bluetooth Modules (802.15.1) Bluetooth Low Energy BLE Module, Shielded, Antenna, ASCII Interface, 9x11.5mm
+K
+F https://componentsearchengine.com/Datasheets/2/RN4871-V_RM140.pdf
+$ENDCMP
+#
+$CMP MCP112T-195I_TT
+D Supervisory Circuits Push-Pull Low
+K
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20001889F.pdf
+$ENDCMP
+#
+$CMP MC3479
+D Accelerometers Small Digital 3-axis Accelerometer Sensor
+K
+F http://www.memsic.com/uploadfiles/2020/08/20200827164636363.pdf
+$ENDCMP
+#
+$CMP SSSS810701
+D Slide Switches Horiz 1 Pole 2 Pos 1.1 Knob 1.5 Travel
+K
+F http://www.alps.com/prod/info/E/HTML/Switch/Slide/SSSS8/SSSS810701.html
+$ENDCMP
+#
+$CMP PTS815_SJM_250_SMTR_LFS
+D Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads
+K
+F https://componentsearchengine.com/Datasheets/1/PTS815 SJM 250 SMTR LFS.pdf
+$ENDCMP
+#
+$CMP FDD86113LZ
+D FDD86113LZ N-Channel MOSFET, 5.5 A, 100 V PowerTrench, 3-Pin DPAK ON Semiconductor
+K
+F https://www.onsemi.com/pub/Collateral/FDD86113LZ-D.pdf
+$ENDCMP
+#
+$CMP 693072010801
+D WURTH ELEKTRONIK - 693072010801 - Memory Card Connector, MicroSD, Hinged, 8 Contacts, Copper, Gold Plated Contacts, WR-CRD Series
+K
+F https://www.we-online.de/katalog/datasheet/693072010801.pdf
+$ENDCMP
+#
+#End Doc Library
