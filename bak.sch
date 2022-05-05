@@ -735,7 +735,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 5900 3500 5800
 Text Label 10850 7500 1    50   ~ 0
-SPI3_CS
+SPI3_CS1
 $Comp
 L Device:D_Bridge_+A-A D2
 U 1 1 62203D2A
@@ -838,101 +838,19 @@ Wire Wire Line
 	15850 2450 15650 2450
 Wire Wire Line
 	15650 2450 15650 2950
-Wire Wire Line
-	6100 2300 6650 2300
-Wire Wire Line
-	6100 2400 6150 2400
-Wire Wire Line
-	6100 3100 6700 3100
-Wire Wire Line
-	6100 3200 6150 3200
-Wire Wire Line
-	6150 2400 6150 2450
-Wire Wire Line
-	6150 3200 6150 3250
 Wire Notes Line
 	4950 1450 6600 1450
 Wire Notes Line
 	6600 1450 6600 1300
 Text Notes 5050 1400 0    50   ~ 0
 Konektory pro další využití\n
-Text Label 6650 2300 2    50   ~ 0
-CON1
-Text Label 6700 3100 2    50   ~ 0
-CON2
-$Comp
-L power:+3.3V #PWR021
-U 1 1 6246BB04
-P 6550 2200
-F 0 "#PWR021" H 6550 2050 50  0001 C CNN
-F 1 "+3.3V" V 6565 2328 50  0000 L CNN
-F 2 "" H 6550 2200 50  0001 C CNN
-F 3 "" H 6550 2200 50  0001 C CNN
-	1    6550 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR022
-U 1 1 6246CD4D
-P 6550 3000
-F 0 "#PWR022" H 6550 2850 50  0001 C CNN
-F 1 "+3.3V" V 6565 3128 50  0000 L CNN
-F 2 "" H 6550 3000 50  0001 C CNN
-F 3 "" H 6550 3000 50  0001 C CNN
-	1    6550 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR018
-U 1 1 6246F0F6
-P 6150 2450
-F 0 "#PWR018" H 6150 2200 50  0001 C CNN
-F 1 "GND" H 6155 2277 50  0001 C CNN
-F 2 "" H 6150 2450 50  0001 C CNN
-F 3 "" H 6150 2450 50  0001 C CNN
-	1    6150 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR019
-U 1 1 6246E920
-P 6150 3250
-F 0 "#PWR019" H 6150 3000 50  0001 C CNN
-F 1 "GND" H 6155 3077 50  0001 C CNN
-F 2 "" H 6150 3250 50  0001 C CNN
-F 3 "" H 6150 3250 50  0001 C CNN
-	1    6150 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 CON4
-U 1 1 61A74DBF
-P 5900 2300
-F 0 "CON4" H 5818 1975 50  0000 C CNN
-F 1 "Conn_01x03" H 5818 2066 50  0000 C CNN
-F 2 "Connector_Wire:SolderWire-0.1sqmm_1x03_P3.6mm_D0.4mm_OD1mm" H 5900 2300 50  0001 C CNN
-F 3 "~" H 5900 2300 50  0001 C CNN
-	1    5900 2300
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 CON5
-U 1 1 62442800
-P 5900 3100
-F 0 "CON5" H 5818 2775 50  0000 C CNN
-F 1 "Conn_01x03" H 5818 2866 50  0000 C CNN
-F 2 "Connector_Wire:SolderWire-0.1sqmm_1x03_P3.6mm_D0.4mm_OD1mm" H 5900 3100 50  0001 C CNN
-F 3 "~" H 5900 3100 50  0001 C CNN
-	1    5900 3100
-	-1   0    0    1   
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x03 CON1
 U 1 1 6263072F
 P 2900 4100
 F 0 "CON1" H 2818 3775 50  0000 C CNN
 F 1 "IR_RECIEVER" H 2818 3866 50  0000 C CNN
-F 2 "Connector_Wire:SolderWire-0.1sqmm_1x03_P3.6mm_D0.4mm_OD1mm" H 2900 4100 50  0001 C CNN
+F 2 "KICAD_bak:MyConnector3" H 2900 4100 50  0001 C CNN
 F 3 "~" H 2900 4100 50  0001 C CNN
 	1    2900 4100
 	-1   0    0    1   
@@ -947,7 +865,7 @@ U 1 1 62632C99
 P 3250 2000
 F 0 "CON2" H 3168 1675 50  0000 C CNN
 F 1 "HALL_SENSOR1" H 3168 1766 50  0000 C CNN
-F 2 "Connector_Wire:SolderWire-0.1sqmm_1x03_P3.6mm_D0.4mm_OD1mm" H 3250 2000 50  0001 C CNN
+F 2 "KICAD_bak:MyConnector3" H 3250 2000 50  0001 C CNN
 F 3 "~" H 3250 2000 50  0001 C CNN
 	1    3250 2000
 	-1   0    0    1   
@@ -958,7 +876,7 @@ U 1 1 626324A3
 P 3250 2750
 F 0 "CON3" H 3168 2425 50  0000 C CNN
 F 1 "HALL_SENSOR2" H 3168 2516 50  0000 C CNN
-F 2 "Connector_Wire:SolderWire-0.1sqmm_1x03_P3.6mm_D0.4mm_OD1mm" H 3250 2750 50  0001 C CNN
+F 2 "KICAD_bak:MyConnector3" H 3250 2750 50  0001 C CNN
 F 3 "~" H 3250 2750 50  0001 C CNN
 	1    3250 2750
 	-1   0    0    1   
@@ -970,23 +888,23 @@ Připojení Hallova senzoru\n
 $Comp
 L power:GND #PWR03
 U 1 1 62198691
-P 3450 2850
-F 0 "#PWR03" H 3450 2600 50  0001 C CNN
-F 1 "GND" H 3455 2677 50  0001 C CNN
-F 2 "" H 3450 2850 50  0001 C CNN
-F 3 "" H 3450 2850 50  0001 C CNN
-	1    3450 2850
+P 4050 2800
+F 0 "#PWR03" H 4050 2550 50  0001 C CNN
+F 1 "GND" H 4055 2627 50  0001 C CNN
+F 2 "" H 4050 2800 50  0001 C CNN
+F 3 "" H 4050 2800 50  0001 C CNN
+	1    4050 2800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 61ABFC33
-P 3450 2100
-F 0 "#PWR02" H 3450 1850 50  0001 C CNN
-F 1 "GND" H 3455 1927 50  0001 C CNN
-F 2 "" H 3450 2100 50  0001 C CNN
-F 3 "" H 3450 2100 50  0001 C CNN
-	1    3450 2100
+P 4050 2100
+F 0 "#PWR02" H 4050 1850 50  0001 C CNN
+F 1 "GND" H 4055 1927 50  0001 C CNN
+F 2 "" H 4050 2100 50  0001 C CNN
+F 3 "" H 4050 2100 50  0001 C CNN
+	1    4050 2100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1011,16 +929,8 @@ F 3 "" H 3950 1900 50  0001 C CNN
 	1    3950 1900
 	1    0    0    -1  
 $EndComp
-Text Label 4150 2750 2    50   ~ 0
-HALL2
-Text Label 4200 2000 2    50   ~ 0
+Text Label 3850 2100 2    50   ~ 0
 HALL1
-Text Notes 2550 3150 0    50   ~ 0
-https://cz.mouser.com/ProductDetail/621-AH49EZ3-G1
-Wire Wire Line
-	3450 2750 4150 2750
-Wire Wire Line
-	3450 2000 4200 2000
 Wire Notes Line
 	4950 1300 4950 4550
 Wire Notes Line
@@ -1103,16 +1013,10 @@ Wire Wire Line
 	3850 3750 4050 3750
 Wire Wire Line
 	4050 3750 4050 3650
-Wire Notes Line
-	2200 3200 4950 3200
-Wire Wire Line
-	3450 2650 3950 2650
 Wire Wire Line
 	3450 1900 3950 1900
 Wire Wire Line
-	6100 3000 6550 3000
-Wire Wire Line
-	6550 2200 6100 2200
+	6550 1950 6100 1950
 Wire Wire Line
 	16850 10600 16250 10600
 Wire Wire Line
@@ -1640,7 +1544,7 @@ U 1 1 61A59630
 P 11500 2700
 F 0 "J2" H 11418 2375 50  0000 C CNN
 F 1 "Conn_01x02" H 11418 2466 50  0000 C CNN
-F 2 "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm" H 11500 2700 50  0001 C CNN
+F 2 "KICAD_bak:MyConnector2" H 11500 2700 50  0001 C CNN
 F 3 "~" H 11500 2700 50  0001 C CNN
 	1    11500 2700
 	-1   0    0    1   
@@ -1664,7 +1568,7 @@ U 1 1 62360086
 P 6350 11500
 F 0 "J3" H 6268 11175 50  0000 C CNN
 F 1 "Conn_01x02" H 6268 11266 50  0000 C CNN
-F 2 "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm" H 6350 11500 50  0001 C CNN
+F 2 "KICAD_bak:MyConnector2" H 6350 11500 50  0001 C CNN
 F 3 "~" H 6350 11500 50  0001 C CNN
 	1    6350 11500
 	1    0    0    -1  
@@ -1847,13 +1751,13 @@ Wire Wire Line
 Wire Wire Line
 	3900 7300 3900 7400
 Text Label 2950 7950 0    50   ~ 0
-SPI1_CS
+SPI2_CS
 Text Label 2950 8050 0    50   ~ 0
-SPI1_MOSI
+SPI2_MOSI
 Text Label 2950 8250 0    50   ~ 0
-SPI1_SCK
+SPI2_SCK
 Text Label 2950 8450 0    50   ~ 0
-SPI1_MISO
+SPI2_MISO
 $Comp
 L power:+3.3V #PWR012
 U 1 1 6204E463
@@ -1955,13 +1859,9 @@ SPI3_MISO
 Text Label 9950 10700 0    50   ~ 0
 SPI3_SCK
 Text Label 9950 10600 0    50   ~ 0
-SPI3_CS
-Text Label 9950 10500 0    50   ~ 0
-IR_OUT
+SPI3_CS1
 Text Label 11700 9850 3    50   ~ 0
 USB-
-Text Label 9950 11100 0    50   ~ 0
-HALL2
 Text Label 11600 9850 3    50   ~ 0
 USB+
 $Comp
@@ -2001,8 +1901,6 @@ Text Label 12200 9750 3    50   ~ 0
 SPI2_MISO
 Text Label 12300 9750 3    50   ~ 0
 SPI2_SCK
-Text Notes 9950 11000 1    50   ~ 0
-SPI GYRO\n
 Text Label 11900 9750 3    50   ~ 0
 ACC_INT2
 Text Label 11800 9850 3    50   ~ 0
@@ -2101,26 +1999,10 @@ Text Label 13500 10700 2    50   ~ 0
 DIODE2
 Text Label 11500 12500 1    50   ~ 0
 DIODE1
-Text Label 9950 11400 0    50   ~ 0
-CON2
 Text Label 9950 10900 0    50   ~ 0
 SPI3_MOSI
-Text Label 12000 9750 3    50   ~ 0
-CON1
-Text Label 13500 11200 2    50   ~ 0
-SPI1_MOSI
 Text Label 9950 11200 0    50   ~ 0
 BOOT
-Text Label 13500 11300 2    50   ~ 0
-SPI1_MISO
-Text Label 9950 11000 0    50   ~ 0
-GYRO_DRDY
-Text Label 13500 11400 2    50   ~ 0
-SPI1_SCK
-Text Label 11500 9850 3    50   ~ 0
-GYRO_INT
-Text Label 13500 11500 2    50   ~ 0
-SPI1_CS
 Text Label 13500 11600 2    50   ~ 0
 MOTOR_PWM
 Text Label 11900 12500 1    50   ~ 0
@@ -2131,8 +2013,6 @@ Text Label 11700 12500 1    50   ~ 0
 HSE_IN
 Text Notes 13550 12050 0    50   ~ 0
 Diody pro možnou signalizaci\n
-Text Notes 13600 11550 1    50   ~ 0
-SPI SD\n
 Wire Wire Line
 	13100 10700 13500 10700
 Wire Wire Line
@@ -2193,8 +2073,6 @@ F 9 "RN4871-V/RM140" H 18000 9400 50  0001 L CNN "Manufacturer_Part_Number"
 	1    16850 10000
 	1    0    0    -1  
 $EndComp
-Text Label 9950 11300 0    50   ~ 0
-HALL1
 $Comp
 L SamacSys_Parts:STM32L4P5CET6 MCU1
 U 1 1 620521ED
@@ -2392,13 +2270,13 @@ F 3 "~" H 17550 4850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Label 16250 6050 0    50   ~ 0
-SPI2_SCK
+SPI3_SCK
 Text Label 16250 6150 0    50   ~ 0
-SPI2_CS
+SPI3_CS2
 Text Label 16250 6350 0    50   ~ 0
-SPI2_MOSI
+SPI3_MOSI
 Text Label 16250 6250 0    50   ~ 0
-SPI2_MISO
+SPI3_MISO
 Wire Wire Line
 	16950 6350 16250 6350
 Wire Wire Line
@@ -2510,4 +2388,72 @@ Wire Wire Line
 	5250 5600 4750 5600
 Wire Wire Line
 	5250 5400 4750 5400
+Wire Wire Line
+	6100 2150 6550 2150
+Wire Wire Line
+	6800 2050 6800 2200
+Wire Wire Line
+	6100 2050 6800 2050
+$Comp
+L power:GND #PWR0102
+U 1 1 62873F77
+P 6800 2200
+F 0 "#PWR0102" H 6800 1950 50  0001 C CNN
+F 1 "GND" H 6805 2027 50  0001 C CNN
+F 2 "" H 6800 2200 50  0001 C CNN
+F 3 "" H 6800 2200 50  0001 C CNN
+	1    6800 2200
+	1    0    0    -1  
+$EndComp
+Text Label 6550 2150 2    50   ~ 0
+SWCLK
+Text Label 6550 1950 2    50   ~ 0
+SWDIO
+Text Label 9950 10500 0    50   ~ 0
+SWCLK
+Text Label 11500 9850 3    50   ~ 0
+SWDIO
+Text Label 9950 11000 0    50   ~ 0
+I2C_SCL
+Text Label 9950 11400 0    50   ~ 0
+I2C_SDA
+Text Label 12000 9750 3    50   ~ 0
+SPI3_CS2
+$Comp
+L Connector_Generic:Conn_01x03 CON4
+U 1 1 61A74DBF
+P 5900 2050
+F 0 "CON4" H 5818 1725 50  0000 C CNN
+F 1 "SWD" H 5818 1816 50  0000 C CNN
+F 2 "KICAD_bak:MyConnector3" H 5900 2050 50  0001 C CNN
+F 3 "~" H 5900 2050 50  0001 C CNN
+	1    5900 2050
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	2200 3200 4950 3200
+Text Notes 2550 3150 0    50   ~ 0
+https://cz.mouser.com/ProductDetail/621-AH49EZ3-G1
+Text Label 13500 11500 2    50   ~ 0
+HALL1
+Text Label 13500 11400 2    50   ~ 0
+HALL2
+Text Label 13500 11300 2    50   ~ 0
+IR_OUT
+Wire Wire Line
+	4050 2750 4050 2800
+Text Label 3800 2850 2    50   ~ 0
+HALL2
+Wire Wire Line
+	3450 2100 3850 2100
+Wire Wire Line
+	3800 2850 3450 2850
+Wire Wire Line
+	3450 2000 4050 2000
+Wire Wire Line
+	4050 2000 4050 2100
+Wire Wire Line
+	3450 2650 3950 2650
+Wire Wire Line
+	3450 2750 4050 2750
 $EndSCHEMATC
