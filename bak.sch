@@ -144,8 +144,6 @@ Wire Notes Line
 Wire Notes Line
 	3450 4750 3450 4550
 Wire Notes Line
-	3000 3350 3000 3200
-Wire Notes Line
 	7400 7950 8450 7950
 Wire Notes Line
 	7400 1450 9000 1450
@@ -728,11 +726,7 @@ Wire Wire Line
 Wire Wire Line
 	15650 2450 15650 2950
 Wire Notes Line
-	4950 1450 6600 1450
-Wire Notes Line
 	6600 1450 6600 1300
-Text Notes 5050 1400 0    50   ~ 0
-Konektory pro další využití\n
 $Comp
 L Connector_Generic:Conn_01x03 CON1
 U 1 1 6263072F
@@ -744,84 +738,10 @@ F 3 "~" H 2900 4100 50  0001 C CNN
 	1    2900 4100
 	-1   0    0    1   
 $EndComp
-Text Notes 2350 3300 0    50   ~ 0
-IR přijímač\n
-Wire Notes Line
-	2200 3350 3000 3350
-$Comp
-L Connector_Generic:Conn_01x03 CON2
-U 1 1 62632C99
-P 3250 2000
-F 0 "CON2" H 3168 1675 50  0000 C CNN
-F 1 "HALL_SENSOR1" H 3168 1766 50  0000 C CNN
-F 2 "KICAD_bak:MyConnector3" H 3250 2000 50  0001 C CNN
-F 3 "~" H 3250 2000 50  0001 C CNN
-	1    3250 2000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 CON3
-U 1 1 626324A3
-P 3250 2750
-F 0 "CON3" H 3168 2425 50  0000 C CNN
-F 1 "HALL_SENSOR2" H 3168 2516 50  0000 C CNN
-F 2 "KICAD_bak:MyConnector3" H 3250 2750 50  0001 C CNN
-F 3 "~" H 3250 2750 50  0001 C CNN
-	1    3250 2750
-	-1   0    0    1   
-$EndComp
 Wire Notes Line
 	3850 1450 3850 1300
-Text Notes 2700 1400 0    50   ~ 0
+Text Notes 2550 1400 0    50   ~ 0
 Připojení Hallova senzoru\n
-$Comp
-L power:GND #PWR03
-U 1 1 62198691
-P 4050 2800
-F 0 "#PWR03" H 4050 2550 50  0001 C CNN
-F 1 "GND" H 4055 2627 50  0001 C CNN
-F 2 "" H 4050 2800 50  0001 C CNN
-F 3 "" H 4050 2800 50  0001 C CNN
-	1    4050 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 61ABFC33
-P 4050 2100
-F 0 "#PWR02" H 4050 1850 50  0001 C CNN
-F 1 "GND" H 4055 1927 50  0001 C CNN
-F 2 "" H 4050 2100 50  0001 C CNN
-F 3 "" H 4050 2100 50  0001 C CNN
-	1    4050 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR08
-U 1 1 6219868B
-P 3950 2650
-F 0 "#PWR08" H 3950 2500 50  0001 C CNN
-F 1 "+3.3V" V 3965 2778 50  0000 L CNN
-F 2 "" H 3950 2650 50  0001 C CNN
-F 3 "" H 3950 2650 50  0001 C CNN
-	1    3950 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR07
-U 1 1 61AA8ACC
-P 3950 1900
-F 0 "#PWR07" H 3950 1750 50  0001 C CNN
-F 1 "+3.3V" V 3965 2028 50  0000 L CNN
-F 2 "" H 3950 1900 50  0001 C CNN
-F 3 "" H 3950 1900 50  0001 C CNN
-	1    3950 1900
-	1    0    0    -1  
-$EndComp
-Text Label 3850 2100 2    50   ~ 0
-HALL1
-Wire Notes Line
-	4950 1300 4950 4550
 Wire Notes Line
 	2200 1450 3850 1450
 Text Notes 2450 15100 0    50   ~ 0
@@ -902,10 +822,6 @@ Wire Wire Line
 	3850 3750 4050 3750
 Wire Wire Line
 	4050 3750 4050 3650
-Wire Wire Line
-	3450 1900 3950 1900
-Wire Wire Line
-	6550 1950 6100 1950
 Wire Wire Line
 	16850 10600 16250 10600
 Wire Wire Line
@@ -1254,8 +1170,6 @@ Wire Wire Line
 	19500 10200 20100 10200
 Wire Notes Line
 	2200 13550 21850 13550
-Wire Notes Line
-	2200 1300 21850 1300
 Text Notes 14850 7950 0    50   ~ 0
 BLE MODUL RN4871-V/RM140
 Wire Notes Line
@@ -1516,8 +1430,6 @@ Wire Wire Line
 Connection ~ 4600 12550
 Wire Wire Line
 	9450 12400 9800 12400
-Wire Notes Line
-	7400 1300 7400 13550
 $Comp
 L SamacSys_Parts:ECS-160-8-36B2-CKM-TR Crystal1
 U 1 1 626EEC50
@@ -1745,7 +1657,7 @@ Text Label 9950 10800 0    50   ~ 0
 SPI3_MISO
 Text Label 9950 10700 0    50   ~ 0
 SPI3_SCK
-Text Label 9950 10600 0    50   ~ 0
+Text Label 9950 11100 0    50   ~ 0
 SPI3_CS1
 Text Label 11700 9850 3    50   ~ 0
 USB-
@@ -1913,11 +1825,7 @@ Wire Wire Line
 Wire Wire Line
 	13500 11300 13100 11300
 Wire Wire Line
-	10400 11300 9950 11300
-Wire Wire Line
 	13100 11400 13500 11400
-Wire Wire Line
-	10400 11400 9950 11400
 Wire Wire Line
 	13100 11500 13500 11500
 Wire Wire Line
@@ -2275,74 +2183,18 @@ Wire Wire Line
 	5250 5600 4750 5600
 Wire Wire Line
 	5250 5400 4750 5400
-Wire Wire Line
-	6100 2150 6550 2150
-Wire Wire Line
-	6800 2050 6800 2200
-Wire Wire Line
-	6100 2050 6800 2050
-$Comp
-L power:GND #PWR0102
-U 1 1 62873F77
-P 6800 2200
-F 0 "#PWR0102" H 6800 1950 50  0001 C CNN
-F 1 "GND" H 6805 2027 50  0001 C CNN
-F 2 "" H 6800 2200 50  0001 C CNN
-F 3 "" H 6800 2200 50  0001 C CNN
-	1    6800 2200
-	1    0    0    -1  
-$EndComp
-Text Label 6550 2150 2    50   ~ 0
-SWCLK
-Text Label 6550 1950 2    50   ~ 0
-SWDIO
 Text Label 9950 10500 0    50   ~ 0
 SWCLK
 Text Label 11500 9850 3    50   ~ 0
 SWDIO
-Text Label 9950 11000 0    50   ~ 0
-I2C_SCL
-Text Label 9950 11400 0    50   ~ 0
-I2C_SDA
 Text Label 12000 9750 3    50   ~ 0
 SPI3_CS2
-$Comp
-L Connector_Generic:Conn_01x03 CON4
-U 1 1 61A74DBF
-P 5900 2050
-F 0 "CON4" H 5818 1725 50  0000 C CNN
-F 1 "SWD" H 5818 1816 50  0000 C CNN
-F 2 "KICAD_bak:MyConnector3" H 5900 2050 50  0001 C CNN
-F 3 "~" H 5900 2050 50  0001 C CNN
-	1    5900 2050
-	-1   0    0    1   
-$EndComp
-Wire Notes Line
-	2200 3200 4950 3200
-Text Notes 2550 3150 0    50   ~ 0
-https://cz.mouser.com/ProductDetail/621-AH49EZ3-G1
 Text Label 13500 11500 2    50   ~ 0
 HALL1
 Text Label 13500 11400 2    50   ~ 0
 HALL2
 Text Label 13500 11300 2    50   ~ 0
 IR_OUT
-Wire Wire Line
-	4050 2750 4050 2800
-Text Label 3800 2850 2    50   ~ 0
-HALL2
-Wire Wire Line
-	3450 2100 3850 2100
-Wire Wire Line
-	3800 2850 3450 2850
-Wire Wire Line
-	3450 2000 4050 2000
-Wire Wire Line
-	4050 2000 4050 2100
-Wire Wire Line
-	3450 2650 3950 2650
-Wire Wire Line
-	3450 2750 4050 2750
 $Comp
 L Device:C C4
 U 1 1 6307F914
@@ -2513,4 +2365,150 @@ Wire Wire Line
 Connection ~ 8600 9550
 Text Label 13500 11200 2    50   ~ 0
 BTN
+Text Label 9950 10600 0    50   ~ 0
+GYRO_INT
+Text Label 9950 11000 0    50   ~ 0
+GYRO_DRDY
+NoConn ~ 10400 11300
+NoConn ~ 10400 11400
+Wire Wire Line
+	3450 2750 4050 2750
+Wire Wire Line
+	3450 2650 3950 2650
+Wire Wire Line
+	4050 2000 4050 2100
+Wire Wire Line
+	3450 2000 4050 2000
+Wire Wire Line
+	3800 2850 3450 2850
+Wire Wire Line
+	3450 2100 3850 2100
+Text Label 3800 2850 2    50   ~ 0
+HALL2
+Wire Wire Line
+	4050 2750 4050 2800
+Text Notes 2550 3150 0    50   ~ 0
+https://cz.mouser.com/ProductDetail/621-AH49EZ3-G1
+Wire Notes Line
+	2200 3200 4950 3200
+$Comp
+L Connector_Generic:Conn_01x03 CON4
+U 1 1 61A74DBF
+P 5750 2650
+F 0 "CON4" H 5668 2325 50  0000 C CNN
+F 1 "SWD" H 5668 2416 50  0000 C CNN
+F 2 "KICAD_bak:MyConnector3" H 5750 2650 50  0001 C CNN
+F 3 "~" H 5750 2650 50  0001 C CNN
+	1    5750 2650
+	-1   0    0    1   
+$EndComp
+Text Label 6400 2550 2    50   ~ 0
+SWDIO
+Text Label 6400 2750 2    50   ~ 0
+SWCLK
+$Comp
+L power:GND #PWR0102
+U 1 1 62873F77
+P 6650 2800
+F 0 "#PWR0102" H 6650 2550 50  0001 C CNN
+F 1 "GND" H 6655 2627 50  0001 C CNN
+F 2 "" H 6650 2800 50  0001 C CNN
+F 3 "" H 6650 2800 50  0001 C CNN
+	1    6650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2650 6650 2650
+Wire Wire Line
+	6650 2650 6650 2800
+Wire Wire Line
+	5950 2750 6400 2750
+Wire Notes Line
+	7400 1300 7400 13550
+Wire Wire Line
+	6400 2550 5950 2550
+Wire Wire Line
+	3450 1900 3950 1900
+Wire Notes Line
+	4950 1300 4950 4550
+Text Label 3850 2100 2    50   ~ 0
+HALL1
+$Comp
+L power:+3.3V #PWR07
+U 1 1 61AA8ACC
+P 3950 1900
+F 0 "#PWR07" H 3950 1750 50  0001 C CNN
+F 1 "+3.3V" V 3965 2028 50  0000 L CNN
+F 2 "" H 3950 1900 50  0001 C CNN
+F 3 "" H 3950 1900 50  0001 C CNN
+	1    3950 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR08
+U 1 1 6219868B
+P 3950 2650
+F 0 "#PWR08" H 3950 2500 50  0001 C CNN
+F 1 "+3.3V" V 3965 2778 50  0000 L CNN
+F 2 "" H 3950 2650 50  0001 C CNN
+F 3 "" H 3950 2650 50  0001 C CNN
+	1    3950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 61ABFC33
+P 4050 2100
+F 0 "#PWR02" H 4050 1850 50  0001 C CNN
+F 1 "GND" H 4055 1927 50  0001 C CNN
+F 2 "" H 4050 2100 50  0001 C CNN
+F 3 "" H 4050 2100 50  0001 C CNN
+	1    4050 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 62198691
+P 4050 2800
+F 0 "#PWR03" H 4050 2550 50  0001 C CNN
+F 1 "GND" H 4055 2627 50  0001 C CNN
+F 2 "" H 4050 2800 50  0001 C CNN
+F 3 "" H 4050 2800 50  0001 C CNN
+	1    4050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 CON3
+U 1 1 626324A3
+P 3250 2750
+F 0 "CON3" H 3168 2425 50  0000 C CNN
+F 1 "HALL_SENSOR2" H 3168 2516 50  0000 C CNN
+F 2 "KICAD_bak:MyConnector3" H 3250 2750 50  0001 C CNN
+F 3 "~" H 3250 2750 50  0001 C CNN
+	1    3250 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 CON2
+U 1 1 62632C99
+P 3250 2000
+F 0 "CON2" H 3168 1675 50  0000 C CNN
+F 1 "HALL_SENSOR1" H 3168 1766 50  0000 C CNN
+F 2 "KICAD_bak:MyConnector3" H 3250 2000 50  0001 C CNN
+F 3 "~" H 3250 2000 50  0001 C CNN
+	1    3250 2000
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	2200 3350 3000 3350
+Text Notes 2350 3300 0    50   ~ 0
+IR přijímač\n
+Wire Notes Line
+	3000 3350 3000 3200
+Wire Notes Line
+	4950 1450 6600 1450
+Wire Notes Line
+	2200 1300 21850 1300
+Text Notes 5600 1500 0    50   ~ 0
+SWD konektor\n\n
 $EndSCHEMATC
