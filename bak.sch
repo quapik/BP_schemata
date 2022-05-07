@@ -5,8 +5,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title "Carrera Car"
-Date "2022-03-22"
-Rev ""
+Date "2022-05-08"
+Rev "Version 2"
 Comp ""
 Comment1 "Vojtěch Šíma, Fakulta informačních technologií  VUT v Brně"
 Comment2 "Bakalářská práce: Měření pohybu auta na autodráze Carrera"
@@ -34,7 +34,6 @@ Connection ~ 12850 4800
 Connection ~ 15150 2650
 NoConn ~ -350 1300
 NoConn ~ 3900 5600
-NoConn ~ 4800 14350
 Wire Wire Line
 	3900 5400 4300 5400
 Wire Wire Line
@@ -155,16 +154,12 @@ Wire Notes Line
 	14750 4050 15350 4050
 Wire Notes Line
 	15350 4050 15350 3900
-Text Notes 6300 15000 0    50   ~ 0
-Účel konektoru by měl být napsán v hodnotě,\npřípadně vedle značky, není vhodné jej dávat\ndo reference, přestože v rámci generování BOMu\nto dává více smysl, pro generování výstupních\npodkladů to naopak smysl nedává
 Text Notes 2250 6500 0    50   ~ 0
 USB https://www.mouser.co.uk/ProductDetail/GCT/USB3065-30-00-A?qs=iLbezkQI%252Bshlw4HeJLlWGw%3D%3D
 Text Notes 2250 6600 0    50   ~ 0
 ESD https://www.tme.eu/cz/details/usblc6-2sc6/ochranne-diody-site/stmicroelectronics/\n
 Text Notes 2300 4700 0    50   ~ 0
 Micro USB a ESD protekce\n
-Text Notes 2850 15600 0    50   ~ 0
-Je vhodné stínění USB připojit\nferitovou perlou/korálkem na zem
 Text Notes 2350 4500 0    50   ~ 0
 https://cz.mouser.com/ProductDetail/78-TSDP34138
 Text Notes 7450 7900 0    50   ~ 0
@@ -177,8 +172,6 @@ Text Notes 7450 7750 0    50   ~ 0
 GYRO https://cz.mouser.com/ProductDetail/511-A3G4250DTR\n
 Text Notes 14800 4000 0    50   ~ 0
 Akcelerometr\n
-Text Notes 4900 14450 0    50   ~ 0
-Bylo by vhodné připad proudovou ochranu\nsloženou z PTC pojistky a transilu
 Text Label 4300 5400 2    50   ~ 0
 USB_CON+
 Text Label 4300 5500 2    50   ~ 0
@@ -744,8 +737,6 @@ Text Notes 2550 1400 0    50   ~ 0
 Připojení Hallova senzoru\n
 Wire Notes Line
 	2200 1450 3850 1450
-Text Notes 2450 15100 0    50   ~ 0
-Je vážný důvod mít jeden senzor na SPI a druhý na I2C?\nPřípadně bych asi očekával, že data z akcelerometru budou\npotřeba s vyšší frekvencí a přesto je na pomalejší sběrnici
 Text Notes 7450 4100 0    50   ~ 0
 Gyroskop\n\n
 Wire Notes Line
@@ -1179,22 +1170,6 @@ Wire Notes Line
 Text Notes 14850 13500 0    50   ~ 0
 BLE MODUL  https://cz.mouser.com/ProductDetail/Microchip-Technology/RN4871-V-RM140?qs=BJlw7L4Cy79E5xvNxQ64Jg%3D%3D
 Wire Notes Line
-	2300 14000 2300 15850
-Wire Notes Line
-	2300 15850 9150 15850
-Wire Notes Line
-	9150 15850 9150 14050
-Wire Notes Line
-	9150 14050 2300 14000
-Text Notes 5250 15550 0    50   ~ 0
-Obecné:\n- Pokud má zapojení jen jednu zem, pak se běžně nepoužívá u značky label GND\n- Schéma by možná bylo lepší pojmout hierarchicky (oddělených částí má docela dost)\n- V případě flat schématu by bylo lepší boxy rozmítit, nějak hezčeji a ne je jen rozházet po prostoru\n- Neexistuje zde jednost v zápisu hodnot: 2k5 vs 2.7k, objevuje se jich zde několik
-Wire Notes Line
-	2300 14300 4300 14300
-Wire Notes Line
-	4300 14300 4300 14000
-Text Notes 2800 14200 0    50   ~ 0
-Užitečné připomínky
-Wire Notes Line
 	7400 7800 21850 7800
 Text Notes 14800 7750 0    50   ~ 0
 ACC https://www.mouser.co.uk/ProductDetail/MEMSIC/MC3479?qs=OlC7AqGiEDmYmlaMvA9fTA%3D%3D
@@ -1394,23 +1369,6 @@ F 2 "" H 11300 9500 50  0001 C CNN
 F 3 "" H 11300 9500 50  0001 C CNN
 	1    11300 9500
 	0    -1   -1   0   
-$EndComp
-$Comp
-L SamacSys_Parts:FDD86113LZ Q1
-U 1 1 622E5FCD
-P 4300 12100
-F 0 "Q1" H 4730 12246 50  0000 L CNN
-F 1 "FDD86113LZ" H 4730 12155 50  0000 L CNN
-F 2 "DPAK3-CASE-369AS" H 4750 12050 50  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/FDD86113LZ-D.pdf" H 4750 11950 50  0001 L CNN
-F 4 "FDD86113LZ N-Channel MOSFET, 5.5 A, 100 V PowerTrench, 3-Pin DPAK ON Semiconductor" H 4750 11850 50  0001 L CNN "Description"
-F 5 "" H 4750 11750 50  0001 L CNN "Height"
-F 6 "512-FDD86113LZ" H 4750 11650 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDD86113LZ?qs=Aj0GNA1YSDQLi07jrZVfPw%3D%3D" H 4750 11550 50  0001 L CNN "Mouser Price/Stock"
-F 8 "ON Semiconductor" H 4750 11450 50  0001 L CNN "Manufacturer_Name"
-F 9 "FDD86113LZ" H 4750 11350 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4300 12100
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R2
@@ -2308,61 +2266,32 @@ F 3 "~" H 13850 9200 50  0001 C CNN
 	1    13850 9200
 	1    0    0    -1  
 $EndComp
-Text Label 9150 9550 2    50   ~ 0
+Text Label 9100 9700 2    50   ~ 0
 BTN
-$Comp
-L Device:C C23
-U 1 1 6285D17C
-P 8600 9700
-F 0 "C23" H 8715 9746 50  0000 L CNN
-F 1 "100n" H 8715 9655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8638 9550 50  0001 C CNN
-F 3 "~" H 8600 9700 50  0001 C CNN
-	1    8600 9700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_Push_Open SW3
 U 1 1 6285D182
-P 8250 9750
-F 0 "SW3" V 8300 10000 50  0000 R CNN
-F 1 "SW_Push_Open" V 8200 10350 50  0000 R CNN
-F 2 "SamacSys_Parts:PTS815SJM250SMTRLFS" H 8250 9950 50  0001 C CNN
-F 3 "~" H 8250 9950 50  0001 C CNN
-	1    8250 9750
+P 8200 9900
+F 0 "SW3" V 8250 10150 50  0000 R CNN
+F 1 "SW_Push_Open" V 8150 10500 50  0000 R CNN
+F 2 "SamacSys_Parts:PTS815SJM250SMTRLFS" H 8200 10100 50  0001 C CNN
+F 3 "~" H 8200 10100 50  0001 C CNN
+	1    8200 9900
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 6285D188
-P 8600 10050
-F 0 "#PWR0103" H 8600 9800 50  0001 C CNN
-F 1 "GND" H 8605 9877 50  0001 C CNN
-F 2 "" H 8600 10050 50  0001 C CNN
-F 3 "" H 8600 10050 50  0001 C CNN
-	1    8600 10050
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 6285D18E
-P 8250 10050
-F 0 "#PWR0104" H 8250 9800 50  0001 C CNN
-F 1 "GND" H 8255 9877 50  0001 C CNN
-F 2 "" H 8250 10050 50  0001 C CNN
-F 3 "" H 8250 10050 50  0001 C CNN
-	1    8250 10050
+P 8200 10200
+F 0 "#PWR0104" H 8200 9950 50  0001 C CNN
+F 1 "GND" H 8205 10027 50  0001 C CNN
+F 2 "" H 8200 10200 50  0001 C CNN
+F 3 "" H 8200 10200 50  0001 C CNN
+	1    8200 10200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 9850 8600 10050
-Wire Wire Line
-	8600 9550 9150 9550
-Wire Wire Line
-	8250 9950 8250 10050
-Wire Wire Line
-	8250 9550 8600 9550
-Connection ~ 8600 9550
+	8200 10100 8200 10200
 Text Label 13500 11200 2    50   ~ 0
 BTN
 Text Label 9950 10600 0    50   ~ 0
@@ -2511,4 +2440,52 @@ Wire Notes Line
 	2200 1300 21850 1300
 Text Notes 5600 1500 0    50   ~ 0
 SWD konektor\n\n
+$Comp
+L Device:R R17
+U 1 1 627CCB79
+P 8550 9450
+F 0 "R17" V 8343 9450 50  0000 C CNN
+F 1 "10k" V 8434 9450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8480 9450 50  0001 C CNN
+F 3 "~" H 8550 9450 50  0001 C CNN
+	1    8550 9450
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 627CDE79
+P 8550 9200
+F 0 "#PWR0103" H 8550 9050 50  0001 C CNN
+F 1 "+3.3V" H 8565 9373 50  0000 C CNN
+F 2 "" H 8550 9200 50  0001 C CNN
+F 3 "" H 8550 9200 50  0001 C CNN
+	1    8550 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 9700 8550 9700
+Wire Wire Line
+	8550 9600 8550 9700
+Connection ~ 8550 9700
+Wire Wire Line
+	8550 9700 9100 9700
+Wire Wire Line
+	8550 9300 8550 9200
+$Comp
+L SamacSys_Parts:FDD86113LZ Q1
+U 1 1 622E5FCD
+P 4300 12100
+F 0 "Q1" H 4730 12246 50  0000 L CNN
+F 1 "FDD86113LZ" H 4730 12155 50  0000 L CNN
+F 2 "SamacSys_Parts:DPAK3-CASE-369AS" H 4750 12050 50  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/FDD86113LZ-D.pdf" H 4750 11950 50  0001 L CNN
+F 4 "FDD86113LZ N-Channel MOSFET, 5.5 A, 100 V PowerTrench, 3-Pin DPAK ON Semiconductor" H 4750 11850 50  0001 L CNN "Description"
+F 5 "" H 4750 11750 50  0001 L CNN "Height"
+F 6 "512-FDD86113LZ" H 4750 11650 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDD86113LZ?qs=Aj0GNA1YSDQLi07jrZVfPw%3D%3D" H 4750 11550 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ON Semiconductor" H 4750 11450 50  0001 L CNN "Manufacturer_Name"
+F 9 "FDD86113LZ" H 4750 11350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4300 12100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

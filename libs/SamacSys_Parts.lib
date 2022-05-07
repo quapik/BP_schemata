@@ -506,7 +506,7 @@ F4 "FDD86113LZ N-Channel MOSFET, 5.5 A, 100 V PowerTrench, 3-Pin DPAK ON Semicon
 F5 "" 450 -350 50 H I L CNN "Height"
 F6 "512-FDD86113LZ" 450 -450 50 H I L CNN "Mouser Part Number"
 F7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDD86113LZ?qs=Aj0GNA1YSDQLi07jrZVfPw%3D%3D" 450 -550 50 H I L CNN "Mouser Price/Stock"
-F8 "ON Semiconductor" 450 -650 50 H I L CNN "Manufacturer_Name"
+F8 "onsemi" 450 -650 50 H I L CNN "Manufacturer_Name"
 F9 "FDD86113LZ" 450 -750 50 H I L CNN "Manufacturer_Part_Number"
 DRAW
 X ~ 1 0 0 100 R 50 50 0 0 P
