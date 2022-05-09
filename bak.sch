@@ -589,25 +589,14 @@ F 3 "~" H 14350 12900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Ferrite_Bead FB1
-U 1 1 62247DD5
-P 3500 6050
-F 0 "FB1" H 3300 6100 50  0000 R CNN
-F 1 "Ferrite_Bead" H 3400 6200 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3430 6050 50  0001 C CNN
-F 3 "~" H 3500 6050 50  0001 C CNN
-	1    3500 6050
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR04
 U 1 1 622BAF7E
-P 3500 6200
-F 0 "#PWR04" H 3500 5950 50  0001 C CNN
-F 1 "GND" H 3505 6027 50  0001 C CNN
-F 2 "" H 3500 6200 50  0001 C CNN
-F 3 "" H 3500 6200 50  0001 C CNN
-	1    3500 6200
+P 3500 5900
+F 0 "#PWR04" H 3500 5650 50  0001 C CNN
+F 1 "GND" H 3505 5727 50  0001 C CNN
+F 2 "" H 3500 5900 50  0001 C CNN
+F 3 "" H 3500 5900 50  0001 C CNN
+	1    3500 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -761,7 +750,7 @@ Wire Notes Line
 	2200 6850 3050 6850
 Wire Notes Line
 	2200 6650 7400 6650
-Text Label 6500 5400 2    50   ~ 0
+Text Label 6900 5250 0    50   ~ 0
 USB+
 $Comp
 L Device:D D1
@@ -1314,17 +1303,6 @@ Connection ~ 11700 8600
 Connection ~ 12250 8600
 Wire Wire Line
 	12250 8600 11700 8600
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 61A59630
-P 11500 2700
-F 0 "J2" H 11418 2375 50  0000 C CNN
-F 1 "Conn_01x02" H 11418 2466 50  0000 C CNN
-F 2 "KICAD_bak:MyConnector2" H 11500 2700 50  0001 C CNN
-F 3 "~" H 11500 2700 50  0001 C CNN
-	1    11500 2700
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR011
 U 1 1 61FBAE6C
@@ -2094,53 +2072,49 @@ F 9 "A3G4250DTR" H 11600 5800 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 5400 6500 5400
-Wire Wire Line
-	6050 5600 6500 5600
+	6450 5450 6900 5450
 $Comp
 L Power_Protection:USBLC6-2SC6 U1
 U 1 1 61A7E604
-P 5650 5500
-F 0 "U1" H 5650 4800 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 5650 4900 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5650 5000 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 5850 5850 50  0001 C CNN
-F 4 "https://www.tme.eu/cz/details/usblc6-2sc6/ochranne-diody-site/stmicroelectronics/" H 5650 5500 50  0001 C CNN "Odkaz"
-	1    5650 5500
+P 6050 5350
+F 0 "U1" H 6050 4650 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 6050 4750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6050 4850 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 6250 5700 50  0001 C CNN
+F 4 "https://www.tme.eu/cz/details/usblc6-2sc6/ochranne-diody-site/stmicroelectronics/" H 6050 5350 50  0001 C CNN "Odkaz"
+	1    6050 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR017
 U 1 1 61AE2ED5
-P 5650 5900
-F 0 "#PWR017" H 5650 5650 50  0001 C CNN
-F 1 "GND" H 5655 5727 50  0001 C CNN
-F 2 "" H 5650 5900 50  0001 C CNN
-F 3 "" H 5650 5900 50  0001 C CNN
-	1    5650 5900
+P 6050 5750
+F 0 "#PWR017" H 6050 5500 50  0001 C CNN
+F 1 "GND" H 6055 5577 50  0001 C CNN
+F 2 "" H 6050 5750 50  0001 C CNN
+F 3 "" H 6050 5750 50  0001 C CNN
+	1    6050 5750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR016
 U 1 1 61AE35A3
-P 5650 5100
-F 0 "#PWR016" H 5650 4950 50  0001 C CNN
-F 1 "+5V" V 5665 5228 50  0000 L CNN
-F 2 "" H 5650 5100 50  0001 C CNN
-F 3 "" H 5650 5100 50  0001 C CNN
-	1    5650 5100
+P 6050 4950
+F 0 "#PWR016" H 6050 4800 50  0001 C CNN
+F 1 "+5V" V 6065 5078 50  0000 L CNN
+F 2 "" H 6050 4950 50  0001 C CNN
+F 3 "" H 6050 4950 50  0001 C CNN
+	1    6050 4950
 	1    0    0    -1  
 $EndComp
-Text Label 6500 5600 2    50   ~ 0
+Text Label 6900 5450 2    50   ~ 0
 USB_CON+
-Text Label 4750 5600 0    50   ~ 0
+Text Label 5150 5450 0    50   ~ 0
 USB_CON-
-Text Label 4750 5400 0    50   ~ 0
+Text Label 5150 5250 0    50   ~ 0
 USB-
 Wire Wire Line
-	5250 5600 4750 5600
-Wire Wire Line
-	5250 5400 4750 5400
+	5650 5450 5150 5450
 Text Label 9950 10500 0    50   ~ 0
 SWCLK
 Text Label 11500 9850 3    50   ~ 0
@@ -2486,6 +2460,58 @@ F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDD86113L
 F 8 "ON Semiconductor" H 4750 11450 50  0001 L CNN "Manufacturer_Name"
 F 9 "FDD86113LZ" H 4750 11350 50  0001 L CNN "Manufacturer_Part_Number"
 	1    4300 12100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5250 6900 5250
+Wire Wire Line
+	5350 5250 5150 5250
+$Comp
+L Device:R R18
+U 1 1 628F3ED9
+P 5500 5250
+F 0 "R18" V 5600 5250 50  0000 C CNN
+F 1 "22" V 5700 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5430 5250 50  0001 C CNN
+F 3 "~" H 5500 5250 50  0001 C CNN
+	1    5500 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 628FFF5D
+P 6600 5250
+F 0 "R19" V 6700 5250 50  0000 C CNN
+F 1 "22" V 6800 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6530 5250 50  0001 C CNN
+F 3 "~" H 6600 5250 50  0001 C CNN
+	1    6600 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x02_MountingPin J2
+U 1 1 62952341
+P 11500 2700
+F 0 "J2" H 11588 2522 50  0000 L CNN
+F 1 "Conn_01x02_MountingPin" H 11588 2613 50  0000 L CNN
+F 2 "KICAD_bak:Conn01x02_my" H 11500 2700 50  0001 C CNN
+F 3 "~" H 11500 2700 50  0001 C CNN
+	1    11500 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11500 2400 11000 2400
+Wire Wire Line
+	11000 2400 11000 3000
+$Comp
+L power:GND #PWR0105
+U 1 1 62983CF7
+P 11000 3000
+F 0 "#PWR0105" H 11000 2750 50  0001 C CNN
+F 1 "GND" H 11005 2827 50  0001 C CNN
+F 2 "" H 11000 3000 50  0001 C CNN
+F 3 "" H 11000 3000 50  0001 C CNN
+	1    11000 3000
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
