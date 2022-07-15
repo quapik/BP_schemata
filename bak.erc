@@ -1,9 +1,0 @@
-Zpráva ERC (22.02.2022 12:14:52, Kódování UTF8 )
-
-***** List /
-ErrType(3): Vývod připojený k jiným vývodům, ale žádný vývod k jeho řízení
-    @(387,35 mm, 190,50 mm): Vývod 1 (Napájecí vstup) součástky #PWR048 není řízen (Síť 18).
-ErrType(3): Vývod připojený k jiným vývodům, ale žádný vývod k jeho řízení
-    @(304,80 mm, 256,54 mm): Vývod 1 (Napájecí vstup) součástky #PWR039 není řízen (Síť 19).
-
- ** ERC zprávy: 2  chyb 0  upozornění 2

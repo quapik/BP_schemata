@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name KICAD_bak)(type KiCad)(uri ${KIPRJMOD}/libs/KICAD_bak.pretty)(options "")(descr ""))
-  (lib (name SamacSys_Parts)(type KiCad)(uri ${KIPRJMOD}/libs/SamacSys_Parts.pretty)(options "")(descr ""))
-)
